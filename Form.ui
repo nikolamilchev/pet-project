@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>566</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Бот</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="find_edit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>130</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Старт</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запуск бота</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_button">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Стоп</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Название товара</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="find_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_button">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>220</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Закрыть</string>
+    </property>
+   </widget>
+   <widget class="PlotWidget" name="plot" native="true">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>261</width>
+      <height>151</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Динамика цены</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="count_edit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Текущая цена</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cache_button">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить кэш</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>566</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
